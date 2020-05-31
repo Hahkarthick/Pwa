@@ -1,0 +1,88 @@
+"icons": [
+    {
+        "src": "./images/icons/pwa_75x75.png",
+        "sizes": "72x72",
+        "type": "image/png"
+    },
+    {
+        "src": "./images/icons/pwa_144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    },
+    {
+        "src": "./images/icons/pwa_192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "./images/icons/pwa_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+]
+Note*: It is must to add icon 192x192 and 512x512 so that chrome automatically scale up the icon based on your device.
+If you’d prefer to scale your own icons and adjust them for pixel-perfection, provide icons in increments of 48dp.
+Start URL
+The start_url tells the browser where your application should start when it is launched and prevents the app from starting on whatever page the user was on when they added your app to their home screen.
+"start_url": "/"
+Orientation
+We can tell the app to open in a specific orientation.
+"orientation": "landscape"
+Note*: The change in orientation will cause the user experience. The application like games will open in default landscape orientation
+That's it here your complete manifest JSON file
+{
+    "name": "PWA Demo App",
+    "short_name": "PWA Demo",
+    "start_url": "/",
+    "theme_color": "#6154c8",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "PWA | Demo App",
+    "icons": [
+        {
+            "src": "./images/icons/pwa_72x72.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_75x75.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_168x168.png",
+            "sizes": "168x168",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/pwa_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
